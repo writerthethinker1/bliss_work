@@ -4,14 +4,19 @@
   <body>
     <header>
       <div class="site-header">
-      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-        <span style="margin-left:50%">
+        <div>
+          <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </div>
+        <div>
+          <i>{{ site.bliss_phrase }}</i>
+        </div>
+        <nav id="right">
           {% for item in site.data.prof_links.structure %}
             {% if item.show == true %}
-            <a class="site-link" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+              <a class="site-link" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
             {% endif %}
           {% endfor %}
-        </span>
+        </nav>
       </div>
 
     </header>

@@ -1,5 +1,5 @@
 # Site settings
-title: "Professional Blog"
+title: "Vocational Bliss"
 url: "https://writerthethinker1.github.io/"
 baseurl: "/bliss_work/"
 
@@ -8,6 +8,15 @@ highlighter: rouge
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
+bliss_phrase: >
+
+  add own vocational phrase...
+
+work_summary: >
+
+  add summary of posts: what are they about?
+
+
 
 # Utils
 mathjax: false
