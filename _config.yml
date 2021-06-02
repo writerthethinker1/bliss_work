@@ -1,17 +1,13 @@
 # Site settings
-title: slim
-baseurl: "/slim"
-url: "http://syaning.com"
+title: "Professional Blog"
+url: "https://writerthethinker1.github.io/"
+baseurl: "/professional/"
 
-# Build settings
-kramdown:
-  input: GFM
-permalink: pretty
-
-# Third-party services
-# just leave blank to disable it
-google_analytics: 
-disqus_shortname: 
+markdown: kramdown
+highlighter: rouge
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
 
 # Utils
-mathjax: true
+mathjax: false

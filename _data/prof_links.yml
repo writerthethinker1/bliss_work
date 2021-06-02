@@ -1,0 +1,19 @@
+professional_links_title: "professional links"
+
+structure:
+
+- title: 'About'
+  url: '/about/'
+  show: true
+
+- title: 'Projects'
+  url: '/projects/'
+  show: true
+
+- title: 'Resume'
+  url: '/resume/'
+  show: true
+
+- title: 'CV'
+  url: '/cv/'
+  show: false

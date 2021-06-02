@@ -2,13 +2,22 @@
 <html>
   {% include head.html %}
   <body>
-    <header class="site-header">
+    <header>
+      <div class="site-header">
       <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <span style="margin-left:50%">
+          {% for item in site.data.prof_links.structure %}
+            {% if item.show == true %}
+            <a class="site-link" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+            {% endif %}
+          {% endfor %}
+        </span>
+      </div>
+
     </header>
     <div class="page-content">
       {{ content }}
     </div>
-    {% include ga.html %}
     {% include mathjax.html %}
   </body>
 </html>
