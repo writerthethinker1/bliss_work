@@ -16,4 +16,4 @@ structure:
 
 - title: 'CV'
   url: '/cv/'
-  show: false
+  show: true

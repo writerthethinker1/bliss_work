@@ -3,15 +3,13 @@ layout: default
 ---
 <div class="home">
 	<section>
-		<h2 class="smallcap">Recent Ideas...</h2>
-		<ul class="post-list">
+		<h1>Recent Work...</h1>
+    <hr/>
+
 			{% for post in site.posts %}
-			<li>
-				<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
 				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</li>
 			{% endfor %}
-		</ul>
 		<p><a href="{{ "/archives/" | prepend: site.baseurl }}">view more...</a></p>
 	</section>
 </div>
