@@ -1,7 +1,7 @@
 # Site settings
 title: "Professional Blog"
 url: "https://writerthethinker1.github.io/"
-baseurl: "/professional/"
+baseurl: "/bliss_work/"
 
 markdown: kramdown
 highlighter: rouge
