@@ -7,17 +7,18 @@
 // Our variables
 $base-font-family: "Menlo";
 $code-font-family: "Monaco";
-$base-font-size:   16px;
+$base-font-size:   17px;
 $base-font-weight: 400;
 $small-font-size:  0.875rem;
 $base-line-height: 1.5;
 
 $spacing-unit:     2rem;
 
-$text-color:       #111;
-$background-color: #fff;
-$brand-color:      #77D388; //link highlight colour
+$text-color:       #1C1C1C;
+$background-color: #FDF9FF;
+$brand-color:      #1C1C1D; //link highlight colour
 $hr_color: #2B2B2B;
+$code-color: #F2EEF6;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

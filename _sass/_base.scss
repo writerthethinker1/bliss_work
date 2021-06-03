@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
     color: $brand-color;
-    text-decoration: none;
+    text-decoration: underline;
 
     &:hover {
         text-decoration: underline;
@@ -117,7 +117,7 @@ blockquote {
  */
 pre,
 code {
-    background-color: #fcfcfc;
+    background-color: $code-color;
 }
 
 code {

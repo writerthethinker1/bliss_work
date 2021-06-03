@@ -1,5 +1,5 @@
 # Site settings
-title: "Vocational Bliss"
+title: "Bliss Title"
 url: "https://writerthethinker1.github.io/"
 baseurl: "/bliss_work/"
 
@@ -14,9 +14,13 @@ bliss_phrase: >
 
 work_summary: >
 
-  add summary of posts: what are they about?
+  primary topics...
 
-
+paginate: 2
+paginate_path: "/page:num"
 
 # Utils
 mathjax: false
+
+plugins:
+  - jekyll-paginate
