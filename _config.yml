@@ -10,14 +10,22 @@ redcarpet:
 permalink:    pretty
 bliss_phrase: >
 
-  add own vocational phrase...
+  Add own vocational phrase...
 
 work_summary: >
 
-  primary topics...
+  Basically about field of food quality control and some software engineering. Had some great ideas and new developments!
 
-paginate: 2
-paginate_path: "/page:num"
+project_desc: >
+
+  Company and personal coding projects as well as new ideas!
+
+paginate: 10
+paginate_path: '/:num'
+
+collections:
+  projects:
+    output: true
 
 # Utils
 mathjax: false

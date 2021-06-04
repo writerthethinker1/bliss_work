@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  Styles for slim
-date:   2014-11-16  00:00:00
+date:   2014-11-16
+author: "Your Name"
 ---
 
 slim is a simple and beautiful jekyll theme, it has only the essential functions
@@ -72,4 +73,8 @@ console.log(b);
 
 MathJax support:
 
-$$ a^2 + b^2 = c^2 $$
+$$
+a^2 + b^2 = c^2
+$$
+
+$a$

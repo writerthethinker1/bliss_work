@@ -3,12 +3,14 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">> {{ page.title }}</h1>
-    <h4><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">// {{ page.date | date: "%b %d, %Y" }}</time></h4>
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <h4><i><time style="color:#7F7E80" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d" }}</time></i></h4>
   </header>
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+
   <div style="text-align:right;color:#B3B2B4">
   <i>-- {% if page.author %} <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</i>
   <div>
