@@ -20,12 +20,35 @@ project_desc: >
 
   Company and personal coding projects as well as new ideas!
 
+works_description: >
+
+  Just some papers and other things related to the field, some during work and others just for fun!
+
 paginate: 10
 paginate_path: '/:num'
 
 collections:
   projects:
     output: true
+
+defaults:
+  - scope:
+      path: "professional_files/articles"
+    values:
+      articles: true
+  - scope:
+      path: "professional_files/books"
+    values:
+      books: true
+  - scope:
+      path: "professional_files/extras"
+    values:
+      extras: true
+  - scope:
+      path: "professional_files/papers"
+    values:
+      papers: true
+
 
 # Utils
 mathjax: false

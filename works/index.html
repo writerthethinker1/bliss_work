@@ -1,0 +1,22 @@
+---
+layout: page
+title: "Works"
+---
+
+<i>{{ site.works_description }}</i>
+
+{% for items in site.data.paper_links.structure %}
+{% if items.show == true %}
+  <h3>{{ items.title }}</h3>
+  <div>
+  {% assign paper_files = site.static_files | where: items.name, true %}
+  <ul style="list-style:none;">
+  {% for thing in paper_files %}
+    <li><a style="text-decoration:none;color:#515152" href="{{ site.baseurl }}{{ thing.path }}">+ {{ thing.name }}</a></li>
+  {% endfor %}
+  </ul>
+  </div>
+{% endif %}
+{% endfor %}
+
+<hr/>

@@ -10,6 +10,10 @@ structure:
   url: '/projects/'
   show: true
 
+- title: 'Works'
+  url: '/works/'
+  show: true
+
 - title: 'Resume'
   url: '/resume/'
   show: true

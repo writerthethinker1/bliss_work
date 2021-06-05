@@ -1,0 +1,19 @@
+paper_links_title: "paper links"
+
+structure:
+
+- title: "Papers"
+  name: "papers"
+  show: true
+
+- title: "Articles"
+  name: "articles"
+  show: true
+
+- title: "Books"
+  name: "books"
+  show: true
+
+- title: "Extras"
+  name: "extras"
+  show: true

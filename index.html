@@ -13,7 +13,7 @@ layout: default
 
     {% if forloop.first %}
     <h2>{{this_year}}</h2>
-    <ul style="list-style: none;">
+    <ul style="list-style:none;">
     {% endif %}
 
     <li><a class="black" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
