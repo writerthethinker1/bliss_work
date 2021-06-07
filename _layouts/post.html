@@ -4,7 +4,20 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <h4><i><time style="color:#7F7E80" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d" }}</time></i></h4>
+
+    <div style="width:100%;display:table;margin-bottom:-1.8rem">
+    <div style="display:table-row;">
+        <div style="width:600px;display:table-cell;"><h4><i><time style="color:#7F7E80" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d" }}</time></i></h4></div>
+        <div class="tag_form" style="display:table-cell;text-align:right">
+
+          <i>key: {% for tag in page.tags %}
+            {% capture tag_name %}{{ tag }}{% endcapture %}
+            <a class="tag_style" href="{{ site.baseurl }}tag/{{ tag_name }}">{{ tag_name }}</a>
+         {% endfor %}</i>
+
+        </div>
+    </div>
+    </div>
   </header>
   <div class="post-content" itemprop="articleBody">
     {{ content }}

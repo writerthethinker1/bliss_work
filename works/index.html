@@ -12,7 +12,7 @@ title: "Works"
   {% assign paper_files = site.static_files | where: items.name, true %}
   <ul style="list-style:none;">
   {% for thing in paper_files %}
-    <li><a style="text-decoration:none;color:#515152" href="{{ site.baseurl }}{{ thing.path }}">+ {{ thing.name }}</a></li>
+    <li><a style="text-decoration:none;color:#515152" href="{{ site.baseurl }}{{ thing.path }}"><b>+ {{ thing.name }}</b></a></li>
   {% endfor %}
   </ul>
   </div>

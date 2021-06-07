@@ -4,10 +4,12 @@ url: "https://writerthethinker1.github.io/"
 baseurl: "/bliss_work/"
 
 markdown: kramdown
+mathjax: true
 highlighter: rouge
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
+
 bliss_phrase: >
 
   Add own vocational phrase...
@@ -49,9 +51,6 @@ defaults:
     values:
       papers: true
 
-
-# Utils
-mathjax: false
 
 plugins:
   - jekyll-paginate

@@ -1,0 +1,14 @@
+<i style="color:#4B4A4B">More keys:</i>
+<div class="tag_form">
+{% capture temptags %}
+  {% for tag in site.tags %}
+    {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
+{% for temptag in sortedtemptags %}
+  {% assign tagitems = temptag | split: '#' %}
+  {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
+    <a class="tag_form" href="{{ site.baseurl }}/tag/{{ tagname }}">{{ tagname }}</a>&nbsp;&nbsp;
+{% endfor %}
+</div>

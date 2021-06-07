@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+
+<h1>{{ page.title }}</h1>
+<div style="text-align:center">
+{% for post in site.tags[page.tag] %}
+<a class="tag_form" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>&nbsp;&nbsp;
+{% endfor %}
+</div>
+<hr/>
+{% include tag_archive.html %}

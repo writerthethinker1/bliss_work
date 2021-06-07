@@ -3,7 +3,7 @@ layout: page
 title: "Resume"
 ---
 
-Just some resume tips, erase and write the resume here!
+*Just some resume tips, erase and write the resume here!*
 
 # Make that Resume Outstanding!
 
@@ -71,12 +71,12 @@ Sometimes it helps us know what we have done by routinely having an *accomplishm
 * how we did more than what we thought we could do
 * times worked well with others for a common goal/project
 
-It helps show your strengths and helps write the main resume. A more clear description of yourself for the employer. 
+It helps show your strengths and helps write the main resume. A more clear description of yourself for the employer.
 
 ---
 
 <!-- include a pdf if you have one, if you don't just delete the below... -->
 
 <div style="text-align:right">
-<a href="{{ site.baseurl }}/professional_files/resume.pdf">view pdf</a>
+<a href="{{ site.baseurl }}/professional_files/resume.pdf">resume.pdf</a>
 </div>

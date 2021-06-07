@@ -59,8 +59,14 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
-    margin-left: $spacing-unit;
+ul {
+  margin-left: 4rem;
+  margin-right: 2rem;
+}
+
+ol {
+  margin-left: 5rem;
+  margin-right: 1.8rem;
 }
 
 li {
@@ -100,10 +106,15 @@ a {
  */
 blockquote {
     color: $grey-color;
-    padding-left: $spacing-unit / 2;
-    border-left: 2px solid $grey-color-light;
+    padding-left: $spacing-unit * 0.7;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    border-left: 2px solid #8E8D8F;
     font-style: italic;
-    font-size: 24px;
+    font-size: 21px;
+    font-family: "Times";
+    margin-left: 3rem;
+    margin-right: 5rem;
 
     > :last-child {
         margin-bottom: 0;
@@ -149,6 +160,7 @@ table {
     border-collapse: separate;
     border-spacing: 0;
     table-layout: fixed;
+
 }
 
 th,

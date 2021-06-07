@@ -6,12 +6,12 @@ structure:
   url: '/about/'
   show: true
 
-- title: 'Projects'
-  url: '/projects/'
-  show: true
-
 - title: 'Works'
   url: '/works/'
+  show: true
+
+- title: 'Projects'
+  url: '/projects/'
   show: true
 
 - title: 'Resume'
