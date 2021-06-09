@@ -73,6 +73,8 @@ Sometimes it helps us know what we have done by routinely having an *accomplishm
 
 It helps show your strengths and helps write the main resume. A more clear description of yourself for the employer.
 
+> A review by some people you know in the field you are applying for might also help, their experience can also guide you to write a noticeable resume.
+
 ---
 
 <!-- include a pdf if you have one, if you don't just delete the below... -->
