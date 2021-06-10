@@ -1,0 +1,11 @@
+---
+layout: page
+title: "+ Articles"
+---
+
+<ul style="list-style:none;">
+{% assign article_files = site.static_files | where: "articles", true %}
+{% for thing in article_files %}
+  <li><a style="text-decoration:none;color:#515152" href="{{ site.baseurl }}{{ thing.path }}"><b>+ {{ thing.name }}</b></a></li>
+{% endfor %}
+</ul>

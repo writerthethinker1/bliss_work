@@ -1,19 +1,19 @@
-paper_links_title: "paper links"
+works_links_title: "works links"
 
 structure:
 
 - title: "Papers"
-  name: "papers"
+  url: "/works/papers"
   show: true
 
 - title: "Articles"
-  name: "articles"
+  url: "/works/articles"
   show: true
 
 - title: "Books"
-  name: "books"
+  url: "/works/books"
   show: true
 
 - title: "Extras"
-  name: "extras"
+  url: "/works/extras"
   show: true

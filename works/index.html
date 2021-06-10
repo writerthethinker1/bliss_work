@@ -3,20 +3,15 @@ layout: page
 title: "Works"
 ---
 
-<i>{{ site.works_description }}</i>
 
-{% for items in site.data.paper_links.structure %}
+<i style="color:#7F7E80">{{ site.works_description }}</i>
+
+<br><br>
+
+<hr style="margin-top:0.9rem"/>
+
+{% for items in site.data.works_links.structure %}
 {% if items.show == true %}
-  <h3>{{ items.title }}</h3>
-  <div>
-  {% assign paper_files = site.static_files | where: items.name, true %}
-  <ul style="list-style:none;">
-  {% for thing in paper_files %}
-    <li><a style="text-decoration:none;color:#515152" href="{{ site.baseurl }}{{ thing.path }}"><b>+ {{ thing.name }}</b></a></li>
-  {% endfor %}
-  </ul>
-  </div>
+  <a style="text-decoration:none;font-size:28px" href="{{ site.baseurl }}{{ items.url }}">+ {{ items.title }}</a><hr/>
 {% endif %}
 {% endfor %}
-
-<hr/>

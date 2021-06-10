@@ -1,20 +1,22 @@
 # Site settings
-title: "Bliss Title"
-url: "https://writerthethinker1.github.io/"
-baseurl: "/bliss_work/"
+title: "Bliss Title" #the title of the site: maybe your name?
+url: "https://writerthethinker1.github.io/" #use the format username.github.io
+baseurl: "/bliss_work/" #the repo name on your github account...
+author: "writerthinker" #put your name here...
 
 markdown: kramdown
-mathjax: true
+mathjax: true #if you want to use math...
 highlighter: rouge
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    pretty
+permalink: pretty
 
+# the phrases for the site...customize to your liking, all after the '>'
 bliss_phrase: >
 
   Add own vocational phrase...
 
-work_summary: >
+talks_summary: >
 
   Basically about field of food quality control and some software engineering. Had some great ideas and new developments!
 
@@ -26,8 +28,10 @@ works_description: >
 
   Just some papers and other things related to the field, some during work and others just for fun!
 
-paginate: 10
+paginate: 10 #the number of talks you want per page
 paginate_path: '/:num'
+
+# collections, static files, and plugin information...
 
 collections:
   projects:

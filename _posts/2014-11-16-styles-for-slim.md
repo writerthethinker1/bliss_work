@@ -3,7 +3,6 @@ layout: post
 title:  Styles for slim
 date:   2014-11-16
 tag: "intro"
-author: "Your Name"
 ---
 
 slim is a simple and beautiful jekyll theme, it has only the essential functions

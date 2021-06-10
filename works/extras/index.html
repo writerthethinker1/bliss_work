@@ -1,0 +1,11 @@
+---
+layout: page
+title: "+ Extras"
+---
+
+<ul style="list-style:none;">
+{% assign extra_files = site.static_files | where: "extras", true %}
+{% for thing in extra_files %}
+  <li><a style="text-decoration:none;color:#515152" href="{{ site.baseurl }}{{ thing.path }}"><b>+ {{ thing.name }}</b></a></li>
+{% endfor %}
+</ul>
