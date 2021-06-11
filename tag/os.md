@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "OS Talks"
+title: "Os Talks"
 tag: os
 ---
