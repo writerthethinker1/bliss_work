@@ -12,7 +12,7 @@ layout: default
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
     {% if forloop.first %}
-    <h2>{{this_year}}</h2>
+    <h2 style="color:#282828">{{this_year}}</h2>
     <ul style="list-style:none;">
     {% endif %}
 
@@ -23,7 +23,7 @@ layout: default
     {% else %}
         {% if this_year != next_year %}
         </ul>
-        <h2>{{next_year}}</h2>
+        <h2 style="color:#282828">{{next_year}}</h2>
         <ul style="list-style: none;">
         {% endif %}
     {% endif %}
@@ -46,6 +46,3 @@ layout: default
   {% endif %}
 </div>
 </div>
-
-
-<!-- add pagnation, group posts by year, change way date is seen, more reader friendly... -->

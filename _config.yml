@@ -4,8 +4,8 @@ url: "https://writerthethinker1.github.io/" #use the format username.github.io
 baseurl: "/bliss_work/" #the repo name on your github account...
 author: "writerthinker" #put your name here...
 
-markdown: kramdown
 mathjax: true #if you want to use math...
+markdown: kramdown
 highlighter: rouge
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
@@ -30,6 +30,8 @@ works_description: >
 
 paginate: 10 #the number of talks you want per page
 paginate_path: '/:num'
+
+other_files_link: "professional_files/others/"
 
 # collections, static files, and plugin information...
 

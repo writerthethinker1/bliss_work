@@ -5,4 +5,9 @@
   <title>{% if page.title %}{{ " - " | prepend: page.title }}{% endif %}{{ site.title }}</title>
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <!-- for the favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="{{ site.baseurl }}favicon_io/site.webmanifest">
 </head>

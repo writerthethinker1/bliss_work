@@ -10,6 +10,7 @@ function bliss() {
     this_date=$(date +"%Y-%m-%d")
     this_year=$(date +"%Y")
     this_month=$(date +"%b")
+    the_second=$(date +"%S")
     talk_link="./_posts"
     project_link="./_projects"
 
@@ -63,7 +64,7 @@ function bliss() {
 
       else
 
-        sed "s/talk date/${this_date}/" ./_templates/talks.md > ${talk_link}/${this_date}-new-talk.md
+        sed "s/talk date/${this_date}/" ./_templates/talks.md > ${talk_link}/${this_date}-new-talk${the_second}.md
         echo "new talk made! you set the filename..."
 
       fi
@@ -93,7 +94,7 @@ function bliss() {
 
         else
 
-          sed "s/proj date/${this_date}/" ./_templates/projects.md > ${project_link}/plain_project.md
+          sed "s/proj date/${this_date}/" ./_templates/projects.md > ${project_link}/plain_project${the_second}.md
 
           echo "new project made! a plain template!"
 

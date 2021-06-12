@@ -50,5 +50,5 @@ It helps show your strengths and helps write the main resume. A more clear descr
 ---
 
 <div style="text-align:right">
-<a href="{{ site.baseurl }}/professional_files/cv.png">cv.png</a>
+<a href="{{ site.baseurl }}{{ site.other_files_link }}cv.png">cv.png</a>
 </div>

@@ -5,7 +5,7 @@ title: "+ Papers"
 
 
 
-<ul style="list-style:none;">
+<ul style="list-style:none">
 {% assign paper_files = site.static_files | where: "papers", true %}
 {% for thing in paper_files %}
   <li><a style="text-decoration:none;color:#515152" href="{{ site.baseurl }}{{ thing.path }}"><b>+ {{ thing.name }}</b></a></li>

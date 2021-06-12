@@ -80,5 +80,5 @@ It helps show your strengths and helps write the main resume. A more clear descr
 <!-- include a pdf if you have one, if you don't just delete the below... -->
 
 <div style="text-align:right">
-<a href="{{ site.baseurl }}/professional_files/resume.pdf">resume.pdf</a>
+<a href="{{ site.baseurl }}{{ site.other_files_link }}resume.pdf">resume.pdf</a>
 </div>

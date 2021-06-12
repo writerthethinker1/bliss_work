@@ -10,11 +10,13 @@ layout: default
         <div style="width:600px;display:table-cell;"><h4><i><time style="color:#7F7E80" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d" }}</time></i></h4></div>
         <div class="tag_form" style="display:table-cell;text-align:right">
 
+          {% assign tag_size = page.tags | size %}
+          {% if tag_size != 0 %}
           <i>key: {% for tag in page.tags %}
             {% capture tag_name %}{{ tag }}{% endcapture %}
             <a class="tag_style" href="{{ site.baseurl }}tag/{{ tag_name }}">{{ tag_name }}</a>
          {% endfor %}</i>
-
+         {% endif %}
         </div>
     </div>
     </div>
@@ -25,6 +27,6 @@ layout: default
 
 
   <div style="text-align:right;color:#B3B2B4">
-  <i>-- {% if site.author %} <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.author }}</span></span>{% endif %}</i>
+  <i>{% if site.author %} <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">—— {{ site.author }}</span></span>{% endif %}</i>
   <div>
 </article>

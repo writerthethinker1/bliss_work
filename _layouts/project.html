@@ -8,8 +8,9 @@ layout: default
     <div style="display:table-row;">
       {% if page.keywords %}
         <div style="width:600px;display:table-cell;"><h4 style="color:#878688"><i><b>keywords:</b> {{ page.keywords }}</i></h4></div>
-        <div style="display:table-cell;"><h4 style="text-align:right"><time style="color:#7F7E80" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %Y" }}</time></h4></div>
       {% endif %}
+        <div style="display:table-cell;"><h4 style="text-align:right"><time style="color:#7F7E80" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %Y" }}</time></h4></div>
+
     </div>
     </div>
     <hr/>
