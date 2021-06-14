@@ -11,12 +11,18 @@ function bliss() {
     this_year=$(date +"%Y")
     this_month=$(date +"%b")
     the_second=$(date +"%S")
-    talk_link="./_posts"
-    project_link="./_projects"
+    talk_link="./_posts/${this_year}"
+    project_link="./_projects/${this_year}"
 
     # 1. make the talk post...need title and tag
     if [ $1 = "talk" ];
     then
+
+      if [ ! -d "${talk_link}" ]; then
+        #if there's no year directory
+        mkdir ${talk_link}
+
+      fi
 
       if [ ! -z $2 ]; #the filename is there...
       then
@@ -30,7 +36,7 @@ function bliss() {
               if [ -e ./tag/$4.md ];
               then
 
-                sed "s/Talk title/$3/;s/talk date/${this_date}/;s/talk tag/$4/" ./_templates/talks.md > ${talk_link}/${this_date}-$2.md
+                sed "s/Talk title/$3/;s/talk date/${this_date}/;s/talk_tag/$4/" ./_templates/talks.md > ${talk_link}/${this_date}-$2.md
 
                 echo "new talk made! tag is included..."
 
@@ -42,7 +48,7 @@ function bliss() {
                 # makes the tag file, since new
                 sed "s/Tag Title/${upper_4} Talks/;s/tag name/$4/" ./_templates/tag_template.md > ./tag/$4.md
 
-                sed "s/Talk title/$3/;s/talk date/${this_date}/;s/talk tag/$4/" ./_templates/talks.md > ${talk_link}/${this_date}-$2.md
+                sed "s/Talk title/$3/;s/talk date/${this_date}/;s/talk_tag/$4/" ./_templates/talks.md > ${talk_link}/${this_date}-$2.md
 
                 echo "new talk made! tag is included..."
 
@@ -50,8 +56,13 @@ function bliss() {
 
           else
 
-            sed "s/Talk title/$3/;s/talk date/${this_date}/" ./_templates/talks.md > ${talk_link}/${this_date}-$2.md
-            echo "new talk made! you set the tag..."
+            sed "s/Talk title/$3/;s/talk date/${this_date}/;" ./_templates/talks.md > ./somefile.md
+
+            sed '5d' ./somefile.md > ${talk_link}/${this_date}-$2.md
+
+            rm ./somefile.md
+
+            echo "new talk made! no tags.."
 
           fi
 
@@ -73,6 +84,12 @@ function bliss() {
 
       if [ $1 = "project" ]; #if need a project
       then
+
+        if [ ! -d "${project_link}" ]; then
+          #if there's no year directory
+          mkdir ${project_link}
+
+        fi
 
         if [ ! -z $2 ]; #the filename is there...
         then
