@@ -32,7 +32,7 @@ For remote or online networking, a good and often used site is [linkedin](https:
 
 There are other sites too! You can try [Meetup](https://www.meetup.com/) to find where people interested in the same things you are are meeting for career related events and gain some experience with other things too! You can also try [slack](https://slack.com) and go to different channels according to your interests! There are other options as well, try to find meaningful connections and there's nothing wrong with more! The idea is to get a better picture about the company you want to work for as well as have a good standing with them. All of this helps with your employment later.
 
-## Making a through check...
+## Making a thorough check...
 
 Before applying, make sure first that *your resume is up-to-date!* Keep it tailored for the position you want and include everything that is relevant. Make sure your contact information is apparent if you apply for a remote job and leave a reference for them to reach you if you apply locally. Also, be prepared for an interview if you are chosen as a potential candidate and *keep a regular check of your email or other ways for employers to contact you*. Always respond within due reason, at your earliest convenience and show the employer that you wish to work there with the greatest of intent.
 
