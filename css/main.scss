@@ -5,9 +5,9 @@
 
 
 // Our variables
-$base-font-family: "Menlo";
+$base-font-family: "Optima";
 $code-font-family: "Monaco";
-$base-font-size:   18px;
+$base-font-size:   21px;
 $base-font-weight: 400;
 $small-font-size:  0.875rem;
 $base-line-height: 1.5;
@@ -20,7 +20,7 @@ $brand-color:      #1C1C1D; //link highlight colour
 $hr_color: #2B2B2B;
 $code-color: #F2EEF6;
 
-$grey-color:       #828282;
+$grey-color:       #737374;//#828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
