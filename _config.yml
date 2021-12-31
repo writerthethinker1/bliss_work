@@ -11,6 +11,7 @@ redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink: pretty
 
+# parts you edit!
 # the phrases for the site...customize to your liking, all after the '>'
 bliss_phrase: >
 
@@ -33,7 +34,9 @@ paginate_path: '/:num'
 
 other_files_link: "professional_files/others/"
 
-# collections, static files, and plugin information...
+#####
+
+# collections, static files, and plugin information...don't edit!!
 
 collections:
   projects:
